@@ -22,7 +22,22 @@
             { productName: 'Rectangular', outOfStock: false, discountPrice: '30 USD', price: '50 USD', imageSrc: 'glasskart-assets/rectangular.jpg' },
             { productName: 'Rounded', outOfStock: false, price: '50 USD', imageSrc: 'glasskart-assets/rounded.jpg' },
         ];
-         //Write the code for creating and rendering ProductList component within this script tag
+        //Write the code for creating and rendering ProductList component within this script tag
+        let listEle = products.map((product) => {
+            React.createElement("li",{key:product.id},
+                React.createElement("img",{
+                    src:product.imageSrc,
+                    alt:product.productName
+                }),
+                React.createElement("p",null,product.price)    
+            )
+                // console.log(product.productName);
+        });
+
+        let element = React.createElement("ul",null,listEle);
+        console.log(element);
+        ReactDOM.render(element,document.getElementById('root'));
+
     </script>
 </body>
 
