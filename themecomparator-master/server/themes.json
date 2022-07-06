@@ -1,0 +1,12 @@
+{
+  "themes": [
+    {
+      "id": 1,
+      "name": "dark-theme",
+      "backgroundColor": "black",
+      "color": "whitesmoke",
+      "fontFamily": "Courier",
+      "fontWeight": "700"
+    }
+  ]
+}
